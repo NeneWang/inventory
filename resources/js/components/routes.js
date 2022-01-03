@@ -1,11 +1,15 @@
+let login = require('./components/auth/login.vue').default;
+let register = require('./components/auth/register.vue').default;
 
 
 export const routes = [{
-        path: '/foo',
-        component: Foo
+        path: '/',
+        component: login,
+        name: '/'
     },
     {
-        path: '/bar',
-        component: Bar
+        path: '/register',
+        component: register,
+        name: 'register'
     }
 ]
